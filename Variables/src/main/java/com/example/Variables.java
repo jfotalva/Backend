@@ -25,7 +25,6 @@ class Variables {
         System.out.println("El resultado de tipobool es  : " + tipobool);
         System.out.println("El char vale : " + letra);
         System.out.println("Cadena vale : " + cadena);
-
-        
+        //...................
     }
 }
