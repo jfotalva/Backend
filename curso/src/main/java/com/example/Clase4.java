@@ -20,7 +20,7 @@ public class Clase4 {
                 division,
                 numero);
                 System.out.printf("Su cuadrado es: %d %n", numero * numero);
-                System.out.printf(Locale.US,"Su cuadrado es: %f %n", Math.pow(numero, 2));
+                System.out.printf(Locale.US,"Su cuadrado es: %2.2f %n", Math.pow(numero, 2));
         scanner.close();
     }
 }
