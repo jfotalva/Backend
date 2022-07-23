@@ -9,11 +9,12 @@ public class Clase6 {
         Scanner scanner = new Scanner(System.in);
         for (int i = 1; i <= 100; i++) {
             System.out.println(i);
-            if (i == 20) {
+            if (i == 5) {
                 break;
             }
         }
         int numeroHijos = -1;
+        
         // Forma 1
         /*
          * while (numeroHijos < 0) {
