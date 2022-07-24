@@ -3,18 +3,18 @@ package com.example;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
-import java.util.HashSet;
+//import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
-import java.util.TreeMap;
-import java.util.TreeSet;
+//import java.util.Set;
+//import java.util.TreeMap;
+//import java.util.TreeSet;
 
 public class Clase10 {
     public static void main(String[] args) {
         // Acceder a un elemento por su nombre
         Map<String, AnimalZoologico> animalesMap = new HashMap<>();
-        //Map<String, AnimalZoologico> animalesMap = new TreeMap<>();
+        // Map<String, AnimalZoologico> animalesMap = new TreeMap<>();
         Leon simba = new Leon("Simba", "amarillo");
         Leon mufasa = new Leon("Mufasa", "Cafe");
         Leon alex = new Leon("Alex", "Cafe");
