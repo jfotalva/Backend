@@ -35,6 +35,7 @@ public class Clase8 {
         System.out.println("Número de Animales después: " + zoologico1.numeroAnimales());
         zoologico1.cierra();
         
+        //No necesito un objeto para ejecutar el método
         Elefante.prueba();
     }
 }
