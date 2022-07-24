@@ -15,6 +15,7 @@ public class Clase8 {
         System.out.println(zoologico2);
         Leon simba = new Leon("Simba", "amarillo");
         Elefante dumbo = new Elefante("Dumbo", "Gris", 3.0);
+        System.out.println("Número de Animales antes: " + zoologico1.numeroAnimales());
         System.out.println("Número de Leones antes: " + zoologico1.numeroLeones());
         System.out.println("Número de Elefantes antes: " + zoologico1.numeroElefantes());
         zoologico1.agregaLeon(simba);
@@ -25,5 +26,15 @@ public class Clase8 {
         simba.ruge();
         dumbo.come();
         dumbo.birrita();
+
+        AnimalZoologico animalZoologico = new Elefante();
+        animalZoologico.come();
+        
+        Cuidador cuidador = new Cuidador("Ricardo","Armadillos");
+        zoologico1.agregaCuidador(cuidador);
+        System.out.println("Número de Animales después: " + zoologico1.numeroAnimales());
+        zoologico1.cierra();
+        
+        Elefante.prueba();
     }
 }

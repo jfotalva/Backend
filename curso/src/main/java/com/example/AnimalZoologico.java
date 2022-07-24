@@ -1,6 +1,6 @@
 package com.example;
 
-public class AnimalZoologico {
+public class AnimalZoologico implements ElementoZoologico{
     protected String nombre;
     protected String color;
     protected double consumoAlimento;
@@ -43,7 +43,7 @@ public class AnimalZoologico {
 
     public void duerme() {
         {
-            System.out.println("Voy a dormir");
+            System.out.println(this.nombre +": Voy a dormir");
         }
     }
 
@@ -52,4 +52,6 @@ public class AnimalZoologico {
             System.out.println("Voy a comer");
         }
     }
+
+    
 }

@@ -10,24 +10,32 @@ public class Zoologico {
 
     private List<Leon> leones;
     private List<Elefante> elefantes;
+    private List<AnimalZoologico> animales;
+    private List<Cuidador> cuidadores;
+    private List<ElementoZoologico> elementos;
 
     public Zoologico() {
+        inicializaListas();
+    }
+
+    private void inicializaListas() {
         leones = new ArrayList<>();
         elefantes = new ArrayList<>();
+        animales = new ArrayList<>();
+        cuidadores = new ArrayList<>();
+        elementos = new ArrayList<>();
     }
 
     public Zoologico(String nombre) {
         this.nombre = nombre;
-        leones = new ArrayList<>();
-        elefantes = new ArrayList<>();
+        inicializaListas();
     }
 
     public Zoologico(String nombre, String direccion, String horario) {
         this.nombre = nombre;
         this.direccion = direccion;
         this.horario = horario;
-        leones = new ArrayList<>();
-        elefantes = new ArrayList<>();
+        inicializaListas();
     }
 
     public String getNombre() {
@@ -56,11 +64,13 @@ public class Zoologico {
 
     @Override //
     public String toString() {
-        return "Nombre: " + this.nombre + ". Dirección: " + this.direccion + ". Horario: " + this.horario;
+        return "*Nombre: " + this.nombre + ". *Dirección: " + this.direccion + ". *Horario: " + this.horario;
     }
 
     public void agregaLeon(Leon leon) {
         leones.add(leon);
+        animales.add(leon);
+        elementos.add(leon);
     }
 
     public int numeroLeones() {
@@ -69,9 +79,26 @@ public class Zoologico {
 
     public void agregaElefante(Elefante elefante) {
         elefantes.add(elefante);
+        animales.add(elefante);
+        elementos.add(elefante);
     }
 
     public int numeroElefantes() {
         return elefantes.size();
+    }
+
+    public int numeroAnimales() {
+        return animales.size();
+    }
+
+    public void cierra() {
+        for (ElementoZoologico elementoZoologico : elementos) {
+            elementoZoologico.duerme();
+        }
+    }
+
+    public void agregaCuidador(Cuidador cuidador) {
+        cuidadores.add(cuidador);
+        elementos.add(cuidador);
     }
 }
