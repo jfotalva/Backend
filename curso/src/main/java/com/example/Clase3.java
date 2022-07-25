@@ -23,6 +23,6 @@ public class Clase3 {
         System.out.print("Ingresa un monto: ");
         double monto = scanner.nextDouble();
         System.out.printf(Locale.US, "Su monto por $%,2.2f fue aceptado.%n", monto);
-        scanner.close();
+        scanner.close();  
     }
 }
